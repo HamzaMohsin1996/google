@@ -7,17 +7,18 @@ import InputSearchArea from './InputSearch';
 export default function SearchContent() {
   return (
     <>
-    <Box sx={{ display: 'flex',justifyContent: 'center',alignItems: 'center',flexDirection: 'column' }} style={{height: 'calc(100vh - 140px)'}} >
+    <Box sx={{ display: 'flex',justifyContent: 'center',alignItems: 'center',flexDirection: 'column' }} style={{height: 'calc(100vh - 157px)'}} >
         <img src={GoogleImg} alt="Google Image" style={{
         width: 292,
         height: 92,
       }}/>
       <Box sx={{padding: '20px 0'}}>
        <InputSearchArea />
-       </Box>
-      <Box sx={{padding: '20px 0'}}>  
+      
+      <Box sx={{padding: '20px 0',textAlign: 'center'}}>  
       <Button variant="outlined"  sx={{margin: '0 10px'}}>Google Search</Button>
       <Button variant="outlined"  sx={{margin: '0 10px'}} >I'm Feeling Lucky"</Button>
+      </Box>
       </Box>
      
       <Box sx={{display: 'flex',alignItems: 'center'}}>

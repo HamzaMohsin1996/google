@@ -5,7 +5,7 @@ import Menu from './Menu';
 export default function Header() {
   return (
     <>
-    <Box sx={{ display: 'flex',justifyContent: 'end',alignItems: 'center' }}>
+    <Box sx={{ display: 'flex',justifyContent: 'end',alignItems: 'center',padding: '20px 0 0' }}>
     <Link href="https://mail.google.com/mail/u/0/" color="inherit" underline="none" mx={2}>Gmail</Link>
     <Link href="https://www.google.com.pk/imghp?hl=en&ogbl" color="inherit" underline="none">Images</Link>
      <Menu />
