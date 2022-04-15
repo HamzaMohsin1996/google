@@ -1,17 +1,28 @@
-import './App.css';
-import Header from './Components/Header.js';
-import Container from '@mui/material/Container';
-import SearchContent from './Components/SearchContent';
-import Footer from './Components/Footer';
+import React from 'react'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import  Google  from './Components/Google';
+import Home from './Components/Home';
+import Facebook from './Components/Facbook';
+import Instagram from './Components/Instagram';
+import Navbar from './Components/Navbar';
 
-function App() {
-  return (<>
-    <Container maxWidth="100 ">
-       <Header /> 
-       <SearchContent />
-    </Container>
-     <Footer />
-     </>
+
+const App = () => {
+  return (
+    <Router>
+    <div className='App'>
+      <Navbar />
+      <div className='content'>
+      <Routes>
+          <Route exact path="/" element={<Home/>}/>
+          <Route path="/google" element={<Google/>}/>
+          <Route path="/instagram" element={<Instagram/>}/>
+          <Route path="/facebook" element={<Facebook/>}/>
+
+        </Routes>
+      </div>
+    </div>
+    </Router>
   );
 }
 
