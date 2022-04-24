@@ -18,7 +18,7 @@ const  ExpenseItem = (props) =>{
           <Typography variant="h5">{props.title}</Typography> 
           <Box sx={{display:'flex',alignItems:'center',justifyContent:'flex-start'}}>
           <Typography variant="h6" sx={{mr:3}}>${props.ammount}</Typography> 
-          <Button variant="contained" onClick={handleOpen}>Click Me</Button>
+          <Button variant="contained" onClick={handleOpen}>Add Expense</Button>
           </Box>
           </Box>
         </Box>
