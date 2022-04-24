@@ -1,5 +1,5 @@
 import Box from '@mui/material/Box';
-import GoogleImg from '../Assets/Img/logo.png';
+import GoogleImg from '../Assets/Img/google-logo.png';
 import Button from '@mui/material/Button';
 import Link from '@mui/material/Link';
 import InputSearchArea from './InputSearch';
@@ -7,7 +7,7 @@ import InputSearchArea from './InputSearch';
 export default function SearchContent() {
   return (
     <>
-    <Box sx={{ display: 'flex',justifyContent: 'center',alignItems: 'center',flexDirection: 'column' }} style={{height: 'calc(100vh - 157px)'}} >
+    <Box sx={{ display: 'flex',justifyContent: 'center',alignItems: 'center',flexDirection: 'column' }} style={{height: 'calc(100vh - 245px)'}} >
         <img src={GoogleImg} alt="Google Image" style={{
         width: 292,
         height: 92,
