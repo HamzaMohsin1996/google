@@ -1,9 +1,6 @@
 import {Button, Box, Typography} from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 
-
-
-
 const ModalHeader = (props) => {
 return(
      <Box sx={{borderBottom: '1px solid #cccc',paddingBottom:'20px',display:'flex',alignItems:'center',justifyContent:'space-between'}}>
