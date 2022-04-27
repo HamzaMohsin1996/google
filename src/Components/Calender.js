@@ -1,10 +1,10 @@
 import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
 
-const  Calender = (props) => {
-  const month = props.date.toLocaleDateString("en-Uc", { month: "long" });
-  const day = props.date.toLocaleDateString("en-Us", { day: "2-digit" });
-  const year = props.date.getFullYear();
+const  Calender = ({date}) => {
+  const month = new Date(date).toLocaleDateString("en-Uc", { month: "long" }); //
+  const day = new Date(date).toLocaleDateString("en-Us", { day: "2-digit" });
+  const year = new Date(date).getFullYear();
   return (
     <Box
       sx={{
